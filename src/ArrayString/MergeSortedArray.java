@@ -20,11 +20,4 @@ public class MergeSortedArray {
             }
         }
     }
-
-    public static void main(String[] args) {
-        MergeSortedArray mergeSortedArray = new MergeSortedArray();
-        int[] nums1 = new int[] {1, 2, 3, 0, 0, 0};
-        mergeSortedArray.merge(nums1, 3, new int[] {2, 5, 6}, 3);
-        System.out.println("Hello");
-    }
 }
