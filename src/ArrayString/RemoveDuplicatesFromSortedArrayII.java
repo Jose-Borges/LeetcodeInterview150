@@ -32,9 +32,4 @@ public class RemoveDuplicatesFromSortedArrayII {
         }
         return slow;
     }
-
-    public static void main(String[] args) {
-        RemoveDuplicatesFromSortedArrayII removeDuplicatesFromSortedArrayII = new RemoveDuplicatesFromSortedArrayII();
-        removeDuplicatesFromSortedArrayII.removeDuplicates(new int[] {1, 1, 1, 2, 2, 3});
-    }
 }
