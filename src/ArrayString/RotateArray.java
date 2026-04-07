@@ -15,9 +15,4 @@ public class RotateArray {
 
         System.arraycopy(lastNums, 0, nums, 0, rotation);
     }
-
-    public static void main(String[] args) {
-        RotateArray rotateArray = new RotateArray();
-        rotateArray.rotate(new int[] {1, 2, 3, 4, 5, 6, 7}, 3);
-    }
 }
