@@ -1,7 +1,5 @@
 package ArrayString;
 
-import java.util.ArrayList;
-
 public class ProductOfArrayExceptSelf {
     public int[] productExceptSelf(int[] nums) {
         int length = nums.length;
@@ -23,10 +21,5 @@ public class ProductOfArrayExceptSelf {
             }
         }
         return productArray;
-    }
-
-    public static void main(String[] args) {
-        ProductOfArrayExceptSelf productOfArrayExceptSelf = new ProductOfArrayExceptSelf();
-        productOfArrayExceptSelf.productExceptSelf(new int[] {-1,1,0,-3,3});
     }
 }

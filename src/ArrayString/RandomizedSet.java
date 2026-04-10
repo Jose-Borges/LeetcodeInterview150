@@ -31,15 +31,4 @@ class RandomizedSet {
     public int getRandom() {
         return list.get(random.nextInt(list.size()));
     }
-
-    public static void main(String[] args) {
-        RandomizedSet randomizedSet = new RandomizedSet();
-        randomizedSet.insert(1);
-        randomizedSet.remove(2);
-        randomizedSet.insert(2);
-        randomizedSet.getRandom();
-        randomizedSet.remove(1);
-        randomizedSet.insert(2);
-        randomizedSet.getRandom();
-    }
 }
