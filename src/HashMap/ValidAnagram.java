@@ -1,7 +1,5 @@
 package HashMap;
 
-import TwoPointers.ValidPalindrome;
-
 import java.util.HashMap;
 
 public class ValidAnagram {
@@ -25,10 +23,5 @@ public class ValidAnagram {
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        ValidAnagram validAnagram = new ValidAnagram();
-        validAnagram.isAnagram("rat", "car");
     }
 }
