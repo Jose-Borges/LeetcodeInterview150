@@ -1,0 +1,38 @@
+package RandomExercises;
+
+import UtilityClasses.ListNode;
+
+public class _21_MergeTwoSortedLists {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null || list2 == null) {
+            return list1 == null ? list2 : list1;
+        }
+        ListNode head;
+
+        if (list1.val < list2.val) {
+            head = list1;
+            list1 = list1.next;
+        } else {
+            head = list2;
+            list2 = list2.next;
+        }
+
+        ListNode cursor = head;
+
+        while (list1 != null && list2 != null) {
+               if (list1.val <= list2.val) {
+                   cursor.next = list1;
+                   cursor = cursor.next;
+                   list1 = list1.next;
+               } else {
+                   cursor.next = list2;
+                   cursor = cursor.next;
+                   list2 = list2.next;
+               }
+        }
+
+        cursor.next = list1 == null ? list2 : list1;
+
+        return head;
+    }
+}
