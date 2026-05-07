@@ -2,8 +2,6 @@ package RandomExercises.Dailys;
 
 import UtilityClasses.ListNode;
 
-import java.util.List;
-
 public class _61_RotateList {
     public ListNode rotateRight(ListNode head, int k) {
         if (head == null || head.next == null || k == 0) {
