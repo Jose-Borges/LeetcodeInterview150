@@ -1,6 +1,6 @@
-package RandomExercises.Dailys;
+package Matrix;
 
-public class _48_RotateImage {
+public class RotateImage {
     public void rotate(int[][] matrix) {
         int length = matrix.length;
 

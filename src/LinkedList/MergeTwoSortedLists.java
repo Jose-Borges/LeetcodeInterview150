@@ -1,8 +1,8 @@
-package RandomExercises;
+package LinkedList;
 
 import UtilityClasses.ListNode;
 
-public class _21_MergeTwoSortedLists {
+public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null || list2 == null) {
             return list1 == null ? list2 : list1;
